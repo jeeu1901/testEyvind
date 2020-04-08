@@ -1,7 +1,7 @@
+import javax.persistence.*;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,6 +16,7 @@ public class Main {
                 Point point = new Point();
                 point.setX(i);
                 point.setY(i);
+                entityManager.persist(point);
             }
 
             entityManager.getTransaction().commit();

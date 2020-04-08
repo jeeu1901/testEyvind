@@ -12,6 +12,10 @@ public class Point implements Serializable {
     private Long id;
     private int x, y;
 
+    public Point() {
+
+    }
+
     public int getX() {
         return x;
     }
